@@ -243,7 +243,7 @@ class HPV_Blum:
 
                         self.Logging('Success', self.Name, '💰', f'Баланс после игр: {self.Get_Info()["Balance"]}')
 
-                    Waiting = randint(29_000, 32_500) # Значение времени в секундах для ожидания
+                    Waiting = randint(3_600, 7_200) # Значение времени в секундах для ожидания
                     Waiting_STR = (datetime.now() + timedelta(seconds=Waiting)).strftime('%Y-%m-%d %H:%M:%S') # Значение времени в читаемом виде
 
                     self.Logging('Warning', self.Name, '⏳', f'Следующий сбор: {Waiting_STR}!')
